@@ -7,3 +7,64 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+body {
+    background: white;
+    color: #383838;
+    text-align: justify;
+    margin: 10px auto;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-style: italic;
+}
+
+h1{font-size: 56px;}
+h2{font-size: 40px;}
+h3{font-size: 32px;}
+h4{font-size: 24px;}
+h5{font-size: 16px;}
+h6{font-size: 8px;}
+
+a {
+    margin-top: 10px;
+    padding: 6px;
+    border-radius: 5px;
+    background: black;
+    color: #f50057;
+    text-decoration: none;
+
+    transition: color .6s, background .6s;
+}
+
+a:hover {
+    background: #f50057;
+    color:  black;
+}
+
+.centro {
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+    background: #e91e63;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px gray;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    border-bottom:1px solid #e91e63;
+    outline: none;
+    margin-bottom: 16px;
+
+    transition: width .5s;
+}
+
+input:focus {
+    width: 400px;
+    border-color: #e91e63;
+}
