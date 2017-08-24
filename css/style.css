@@ -14,11 +14,17 @@ body {
 
 /* Navigation Bar */
 header {
-    border-bottom: 1px solid black;
+    border: 1px 0px solid #ccc;
 }
 
 #nav-main {
     width: 100%;
+}
+
+#nav-main img {
+    height: 30px;
+    margin: 10px 20px 0;
+    padding: 0 12px;
 }
 
 #nav-main ul {
