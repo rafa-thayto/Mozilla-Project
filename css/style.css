@@ -1,9 +1,57 @@
 /* Import Roboto Font */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #232323;
+}
+
+/* Navigation Bar */
+header {
+    border-bottom: 1px solid black;
+}
+
+#nav-main {
+    width: 100%;
+}
+
+#nav-main ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #FF8C8E;
+}
+
+#nav-main li {
+    float: right;
+}
+
+#nav-main li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+#nav-main li:hover {
+    background-color: #FE6B6D;
+}
+
+#nav-main li a.firefox {
+    color: #f1f1f1;
+    background-color: #000;
+    border-bottom: 1px solid white;
+}
+
+/* Inputs Formating */
+
+input {
+    background: rgba(0, 0, 0, 0);
+    border-style: none;
+    border-bottom: 1px
 }

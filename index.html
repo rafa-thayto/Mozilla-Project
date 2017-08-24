@@ -14,11 +14,13 @@
     <header id="header-main">
         <h1 class="head-logo"><img src="media/img/mozilla-logo.png" alt="Mozilla"></h1>
         <nav id="nav-main">
-            <ul id="nav-main-menu">
-                <li><a href="#mozilla">Mozilla</a></li>
+            <ul class="nav-main-menu">
+                <li><a href="firefox.html" class="firefox">Firefox</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign in</a></li>
                 <li><a href="#inovacoes">Inovações Web</a></li>
                 <li><a href="#historia">História</a></li>
-                <li><a href="firefox.html">Firefox</a></li>
+                <li><a href="#mozilla">Home</a></li>
             </ul>
         </nav>
     </header>
@@ -38,7 +40,14 @@
         <form>
             <fieldset>
                 <legend>Entre em contato</legend>
-                <label for="name"></label>
+                <label for="nome">Nome</label> <br>
+                <input type="text" name="nome" id="nome"> <br>
+
+                <label for="email">Email</label> <br>
+                <input type="email" name="email" id="email"> <br>
+
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+
             </fieldset>
         </form>
     </footer>
