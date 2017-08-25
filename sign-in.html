@@ -6,7 +6,9 @@
 	<meta name="author" content="Rafael Thayto">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/cadastro.css">
+	<link rel="stylesheet" href="css/forms.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 	<header id="header-main">
@@ -24,47 +26,59 @@
 		</header>
 		
 	    <main>
-	    	<form>
-	            <fieldset>
-	                <fieldset class="grupo">
-	                    <!-- Nome -->
-	                    <div class="campo">    
-	                        <label for="nome">Nome</label>
-	                        <input type="text" name="nome" id="nome">
-	                    </div>
-	                    <!-- Sobrenome -->
-	                    <div class="campo">
-	                        <label for="sobrenome">Sobrenome</label>
-	                        <input type="text" name="sobrenome" id="sobrenome">
-	                    </div>
-	                </fieldset>
-		                <!-- Senha -->
-		                <div class="campo">
-		                	<label for="senha">Senha</label>
-		                	<input type="password" name="senha" id="senha">
-		                </div>
-	                    <!-- Email -->
-	                    <div class="campo">
-	                        <label for="email">Email</label>
-	                        <input type="email" name="email" id="email">
-	                    </div>
-	                    <!-- Mensagem do usuário -->
-	                    <div class="campo">
-	                        <label for="mensagem">Mensagem</label>
-	                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
-	                    </div>
-	                    <!-- Verificação de receber a Newsletter -->
-	                    <div class="campo">
-	                        <label for="newsletter"><input type="checkbox" name="newsletter" value="aceito">
-		                        Gostaria de receber a Newsletter
-	                        </label>
-	                    </div>
-	                    <!-- Botão para enviar -->
-	                    <div class="campo">
-	                        <input type="submit" name="botao" id="btn-submit">
-	                    </div>
-	            </fieldset>
-	        </form>
-	    </main>
-</body>
+			<a href="#modal">
+				<button class="w3-button w3-circle w3-teal">+</button>
+			</a>
+
+			<div class="modal" id="modal">
+				<div class="modal-container">
+					<form>
+						<fieldset>
+							<fieldset class="grupo">
+								<!-- Nome -->
+								<div class="campo">    
+									<label for="nome">Nome</label>
+									<input type="text" name="nome" id="nome">
+								</div>
+								<!-- Sobrenome -->
+								<div class="campo">
+									<label for="sobrenome">Sobrenome</label>
+									<input type="text" name="sobrenome" id="sobrenome">
+								</div>
+							</fieldset>
+							<!-- Senha -->
+							<div class="campo">
+								<label for="senha">Senha</label>
+								<input type="password" name="senha" id="senha">
+							</div>
+							<!-- Email -->
+							<div class="campo">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email">
+							</div>
+							<!-- Mensagem do usuário -->
+							<div class="campo">
+								<label for="mensagem">Mensagem</label>
+								<textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
+							</div>
+							<!-- Verificação de receber a Newsletter -->
+							<div class="campo">
+								<label for="newsletter"><input type="checkbox" name="newsletter" value="aceito">
+									Gostaria de receber a Newsletter
+								</label>
+							</div>
+							<!-- Botão para enviar -->
+							<div class="campo">
+								<input type="submit" name="botao" id="btn-submit">
+							</div>
+							<div class="campo">
+								<a href="#">X</a>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</main>
+
+	</body>
 </html>
