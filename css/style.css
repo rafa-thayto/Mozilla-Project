@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Segoe UI', 'Arial', sans-serif;
 }
 
 body {
@@ -18,8 +18,9 @@ header {
 }
 
 main {
-    max-width: 1300px;
     width: 100%;
+    margin-top: 30px;
+    padding: 30px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -28,6 +29,9 @@ main {
 /* Navigation Bar */
 #nav-main {
     width: 100%;
+    position: fixed;
+    top: 0;
+    display: block;
 }
 
 #nav-main img {
