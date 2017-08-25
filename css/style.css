@@ -64,6 +64,12 @@ main {
 }
 
 /* Footer */
+footer {
+    border: 1px solid #ccc;
+}
+
+fieldset {border: none;}
+
 fieldset.grupo .campo {
     float: left;
     margin-right: 15px;
