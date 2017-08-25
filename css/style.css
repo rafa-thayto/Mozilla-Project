@@ -63,6 +63,12 @@ main {
     border-bottom: 1px solid white;
 }
 
+@media screen and (max-width: 600px){
+    #nav-main ul li, 
+    #nav-main li {float: none;}
+    main {margin-top: 310px; }
+}
+
 /* Footer */
 footer {
     border: 1px solid #ccc;
