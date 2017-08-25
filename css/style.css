@@ -10,13 +10,22 @@
 
 body {
     color: #232323;
+    display: block;
 }
 
-/* Navigation Bar */
 header {
     border: 1px 0px solid #ccc;
 }
 
+main {
+    max-width: 1300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Navigation Bar */
 #nav-main {
     width: 100%;
 }
@@ -54,10 +63,12 @@ header {
     border-bottom: 1px solid white;
 }
 
-/* Inputs Formating */
+/* Footer */
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 15px;
+}
 
-input {
-    background: rgba(0, 0, 0, 0);
-    border-style: none;
-    border-bottom: 1px
+.campo label {
+    display: block;
 }
