@@ -13,13 +13,13 @@
 
     <header id="header-main">
         <nav id="nav-main">
-            <ul class="nav-main-menu">
+            <ul class="">
                 <img src="media/img/mozilla-logo.svg" alt="Mozilla" class="head-logo">
                 <li><a href="firefox.html" class="firefox">Firefox</a></li>
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Sign in</a></li>
-                <li><a href="#inovacoes">Inovações Web</a></li>
                 <li><a href="#historia">História</a></li>
+                <li><a href="#inovacoes">Inovações Web</a></li>
                 <li><a href="#mozilla">Home</a></li>
             </ul>
         </nav>
@@ -31,7 +31,9 @@
             <p>Olá. Nós somos a Mozilla, os orgulhosos campeões da Internet, ajudando para mantê-la saudável, aberta e acessível a todos.</p>
         </section>
 
-        <section id="inovacoes"></section>
+        <section id="inovacoes">
+            p*20>lorem
+        </section>
 
         <section id="historia"></section>
 
@@ -39,15 +41,34 @@
     <footer>
         <form>
             <fieldset>
-                <legend>Entre em contato</legend>
-                <label for="nome">Nome</label> <br>
-                <input type="text" name="nome" id="nome"> <br>
-
-                <label for="email">Email</label> <br>
-                <input type="email" name="email" id="email"> <br>
-
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-
+                <fieldset class="grupo">
+                    <!-- Nome -->
+                    <div class="campo">    
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <!-- Sobrenome -->
+                    <div class="campo">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome">
+                    </div>
+                </fieldset>
+                    <!-- Email -->
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <!-- Mensagem do usuário -->
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
+                    </div>
+                    <!-- Verificação de receber a Newsletter -->
+                    <div class="campo">
+                        <label for="newsletter">Newsletter</label>
+                        <input type="checkbox" name="newsletter" value="aceito">
+                        <label for="newsletter">Gostaria de receber as novidades do Firefox</label>
+                    </div>
             </fieldset>
         </form>
     </footer>
