@@ -25,6 +25,19 @@ main {
     margin-right: auto;
 }
 
+/* Itálico */
+span.italic {
+    font-style: italic;
+}
+
+/* Bold */
+span.bold {
+    font-weight: bold;
+}
+
+span.bolder {
+    font-weight: bolder;
+}
 
 /* Navigation Bar */
 #nav-main {
@@ -67,10 +80,10 @@ main {
     border-bottom: 1px solid white;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 694px){
     #nav-main ul li, 
     #nav-main li {float: none;}
-    main {margin-top: 310px; }
+    main {margin-top: 320px; }
 }
 
 /* Footer */
