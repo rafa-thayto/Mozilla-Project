@@ -35,6 +35,7 @@ span.bold {
     font-weight: bold;
 }
 
+/* Bolder */
 span.bolder {
     font-weight: bolder;
 }
@@ -87,7 +88,7 @@ span.bolder {
 }
 
 /* Footer */
-footer {
+/* footer {
     border: 1px solid #ccc;
 }
 
@@ -100,4 +101,4 @@ fieldset.grupo .campo {
 
 .campo label {
     display: block;
-}
+} */
