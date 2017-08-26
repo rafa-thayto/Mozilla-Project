@@ -2,11 +2,25 @@ p {
     margin-top: 0;
 }
 
-a {
+/* Configuring close button */
+a.close {
+    font-family: 'Segoe UI', sans-serif;
     text-decoration: none;
     font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    color: #606060;
+
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    transition: color 0.5s;
 }
 
+a.close:hover {
+    color: #000000;
+}
+
+/* Configuring modal */
 .modal-container {
     position: fixed;
     background-color: #fff;
@@ -42,21 +56,17 @@ a {
     transform: translate(-50%, 0);
 }
 
-.campo {
+/* Configuring Form */
+input {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+fieldset.campo label {
     display: block;
 }
 
-.btn {
-    border: 1px solid #777777;
-    border-radius: 4px;
-    padding: 4px 20px;
-    -webkit-transition: background-color .5s;
-    -moz-transition: background-color .5s;
-    transition: background-color .5s;
+fieldset.grupo .label {
+    float: left;
+    margin-right: 15px;
 }
 
-.btn:hover {
-    background-color: #cccccc;
-}
-
-a.btn {}
