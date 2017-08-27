@@ -59,9 +59,11 @@ a.close:hover {
 /* Configuring Form */
 input {
     background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #FF8C8E;
 }
 
-fieldset.campo label {
+.campo label {
     display: block;
 }
 
