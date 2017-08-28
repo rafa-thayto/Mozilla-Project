@@ -1,7 +1,6 @@
 /* Import Roboto Font */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
 * {
     margin: 0;
     padding: 0;
@@ -26,12 +25,13 @@ main {
     margin-right: auto;
 }
 
+
 /* Navigation Bar */
+
 #nav-main {
     width: 100%;
     position: fixed;
     top: 0;
-    display: block;
 }
 
 #nav-main img {
@@ -43,7 +43,7 @@ main {
 #nav-main ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: #FF8C8E;
+    background: linear-gradient(to right, #7F63FF, #4DA0FF, #1ADDFF, #00CCDA, #00D59E, #00DE5E);
 }
 
 #nav-main li {
@@ -52,27 +52,43 @@ main {
 
 #nav-main li a {
     display: block;
-    color: #000;
+    color: #f1f1f1;
     text-align: center;
     padding: 14px 16px;
+    transition: background .5s;
 }
 
-#nav-main li:hover {
-    background-color: #FE6B6D;
+#nav-main li a:hover {
+    color: aliceblue;
+    background: #7F63FF;
 }
 
 #nav-main li a.firefox {
     color: #f1f1f1;
-    background-color: #000;
-    border-bottom: 1px solid white;
+    background-color: #303030;
 }
 
+#nav-main li a.firefox:hover {
+    background: #7F63FF;
+}
+
+#nav-main ul li {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+
 /* Firefox page */
-#main-firefox section, #main-firefox header{
+
+#main-firefox section,
+#main-firefox header {
     background-color: #F9F9F9;
 }
 
+
 /* Util */
+
 .centro {
     text-align: center;
 }
@@ -81,9 +97,15 @@ main {
     text-align: justify;
 }
 
+
 /* Responsiveness */
-@media screen and (max-width: 694px){
-    #nav-main ul li, 
-    #nav-main li {float: none;}
-    main {margin-top: 320px;}
+
+@media screen and (max-width: 694px) {
+    #nav-main ul li,
+    #nav-main li {
+        float: none;
+    }
+    main {
+        margin-top: 320px;
+    }
 }
