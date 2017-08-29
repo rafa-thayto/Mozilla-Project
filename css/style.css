@@ -1,4 +1,5 @@
 /* Import Roboto Font */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
     margin: 0;
@@ -31,23 +32,23 @@ main {
     position: fixed;
     top: 0;
 }
-
 #nav-main img {
     height: 30px;
     margin: 10px 20px 0;
     padding: 0 12px;
 }
-
 #nav-main ul {
     list-style-type: none;
     overflow: hidden;
     background: linear-gradient(to right, #7F63FF, #4DA0FF, #1ADDFF, #00CCDA, #00D59E, #00DE5E);
 }
-
 #nav-main li {
     float: right;
 }
-
+#nav-main ul li {
+    display: flex;
+    justify-content: flex-end;
+}
 #nav-main li a {
     display: block;
     color: #f1f1f1;
@@ -56,25 +57,17 @@ main {
     padding: 14px 16px;
     transition: background .5s;
 }
-
 #nav-main li a:hover {
     color: aliceblue;
     background: #7F63FF;
     text-decoration: underline;
 }
-
 #nav-main li a.firefox {
     color: #f1f1f1;
     background-color: #303030;
 }
-
 #nav-main li a.firefox:hover {
     background: #7F63FF;
-}
-
-#nav-main ul li {
-    display: flex;
-    justify-content: flex-end;
 }
 
 
@@ -86,6 +79,7 @@ main {
 
 
 /* Util */
+
 .centro {
     text-align: center;
 }
@@ -96,6 +90,7 @@ main {
 
 
 /* Responsiveness */
+
 @media screen and (max-width: 694px) {
     #nav-main ul li,
     #nav-main li {
