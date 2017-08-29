@@ -1,6 +1,7 @@
 /* Import Roboto Font */
-
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +9,15 @@
     font-family: 'Roboto', 'Segoe UI', 'Arial', sans-serif;
 }
 
-body {
-    color: #232323;
-    display: block;
-}
+body { color: #232323; display: block; }
+
+/* Helpful */
+.width100 { width: 100%; }
+.width75 { width: 75%; }
+.width50 { width: 50%; }
+.reft { text-align: left; }
+.right { text-align: right; }
+.center
 
 header {
     border: 1px 0px solid #ccc;
