@@ -1,6 +1,7 @@
 /* Import Roboto Font */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+/* RESET */
 * {
     margin: 0px;
     padding: 0px;
