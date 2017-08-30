@@ -8,7 +8,6 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
 body {
     background: white;
     color: #383838;
@@ -16,11 +15,22 @@ body {
     margin: 10px auto;
 }
 
+/* Útil */
+.centro {
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+    background: #e91e63;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px gray;
+}
+
 /* Títulos */
 h1, h2, h3, h4, h5, h6 {
     font-style: italic;
 }
-
 h1{font-size: 56px;}
 h2{font-size: 40px;}
 h3{font-size: 32px;}
@@ -42,17 +52,6 @@ a {
 a:hover {
     background: #f50057;
     color:  black;
-}
-
-.centro {
-    max-width: 800px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding:20px;
-    background: #e91e63;
-    border-radius: 20px;
-    box-shadow: 1px 1px 12px gray;
 }
 
 input {
