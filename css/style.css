@@ -108,10 +108,17 @@ main {
     text-align: justify;
 }
 
+span.link {
+    color: #7659FF;
+}
+
+span.link:hover {
+    color: #6A49FE;
+}
 
 /* Responsiveness */
 
-@media screen and (max-width: 694px) {
+@media screen and (max-width: 700px) {
     #nav-main ul li,
     #nav-main li {
         float: none;
