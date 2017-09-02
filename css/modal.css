@@ -7,6 +7,7 @@ a.close {
     font-family: 'Segoe UI', sans-serif;
     text-decoration: none;
     font-size: 20px;
+    padding: 0px 1vh;
     display: flex;
     justify-content: flex-end;
     color: #606060;
@@ -67,8 +68,4 @@ input {
     display: block;
 }
 
-fieldset.grupo .label {
-    float: left;
-    margin-right: 15px;
-}
 

@@ -8,7 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="media/icon/moz-favicon.png" type="image/x-icon">
     <link href="css/style.css" rel="stylesheet">
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/forms.css">
+=======
+    <link rel="stylesheet" href="css/modal.css">
+>>>>>>> 0815eccefead4a5e7af033df9522eede81f48da8
 </head>
 
 <body>
@@ -19,12 +23,59 @@
                 <img src="media/img/mozilla-logo.svg" alt="Mozilla" class="head-logo">
                 <li><a href="firefox.html" class="firefox">Firefox</a></li>
                 <li><a href="#">Login</a></li>
-                <li><a href="sign-in.html">Sign in</a></li>
+                <li><a href="#sign-in">Sign in</a></li>
                 <li><a href="#historia">História</a></li>
                 <li><a href="#inovacoes">Inovações Web</a></li>
                 <li><a href="#">Home</a></li>
             </ul>
         </nav>
+        
+        <!-- Sign in -->
+        <div class="modal" id="sign-in">
+            <div class="modal-container">
+                <form action="POST">
+                    <fieldset>
+                        <!-- Botão para sair do modal -->
+                        <a href="#" class="close">x</a>
+                        <!-- Nome -->
+                        <div class="campo">    
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <!-- Sobrenome -->
+                        <div class="campo">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome">
+                        </div>
+                        <!-- Senha -->
+                        <div class="campo">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha">
+                        </div>
+                        <!-- Email -->
+                        <div class="campo">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <!-- Mensagem do usuário -->
+                        <div class="campo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
+                        </div>
+                        <!-- Verificação de receber a Newsletter -->
+                        <div class="campo">
+                            <label for="newsletter"><input type="checkbox" name="newsletter" value="aceito">
+                                Gostaria de receber a Newsletter
+                            </label>
+                        </div>
+                        <!-- Botão para enviar -->
+                        <div class="campo">
+                            <input type="submit" name="botao" id="btn-submit">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </header>
     <main>
 
@@ -59,8 +110,37 @@
 
         <section id="historia">
             <h2>História</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum ipsa a dolores doloribus ducimus officiis dolorem. Nemo, iure neque!</p>
+            <p>Soluta, facilis laudantium. Modi ex ipsum, corrupti culpa quis nulla, voluptate eligendi libero soluta ea doloribus hic mollitia, atque dicta.</p>
+            <p>Deserunt explicabo quo saepe quas, maiores magnam in alias quam mollitia veniam unde nam. Ad et sint doloribus cupiditate illo!</p>
+            <p>Accusantium rerum et nulla illo eos id earum repudiandae tempora, corporis quae quis quo eius, praesentium reprehenderit impedit exercitationem culpa.</p>
+            <p>Quos nihil culpa commodi? Iste velit tempora fuga unde, numquam delectus, a error illum ipsa dolor facilis, doloribus quisquam voluptates.</p>
+            <p>Modi eligendi nulla unde aut pariatur eveniet accusantium ea dolor? Rerum dolorum id quae totam architecto eveniet nisi quidem nihil!</p>
+            <p>Iste ad vel veritatis alias. Maiores dolore voluptate, sequi eum impedit nobis aliquid, harum ipsa, fugit placeat asperiores aliquam quasi.</p>
+            <p>Praesentium, ratione sunt, maxime reprehenderit temporibus ipsum facilis illum voluptas magnam iusto officia sequi laudantium at adipisci nisi voluptates esse!</p>
+            <p>Officia aliquam rerum omnis ratione earum, temporibus reiciendis, totam maxime atque ipsam voluptates eveniet, similique nesciunt rem fugiat dolore quaerat?</p>
+            <p>Delectus nobis ratione optio harum, repudiandae doloribus, iusto eveniet officia minus aperiam aspernatur nisi odio eaque, tempora ad neque voluptates?</p>
+            <p>Recusandae alias, modi natus, aliquid animi velit quasi tempora cumque, veniam voluptates id ipsa minus necessitatibus. Architecto ab totam nisi.</p>
+            <p>Eius temporibus voluptatem eligendi ratione autem quam? Architecto aut nobis doloribus recusandae a necessitatibus, quod, nemo commodi, rerum modi omnis?</p>
+            <p>Alias, ullam nulla voluptate asperiores minima sed eveniet soluta pariatur? A ab quidem, saepe necessitatibus facere amet aspernatur hic possimus?</p>
+            <p>Quod doloremque aliquid neque culpa, nam, eum quam accusamus ullam accusantium sed asperiores rem quas deserunt? Voluptatem quidem et eius?</p>
+            <p>Porro exercitationem repellat officia, numquam quod provident explicabo odio aut ad accusantium perspiciatis quas a laudantium fugit maxime nulla sequi!</p>
+            <p>Facere praesentium inventore molestiae quos id sapiente aliquam modi eligendi nobis consectetur voluptates et, consequuntur deserunt ipsum in quis. Alias?</p>
+            <p>Possimus architecto neque itaque odit odio in repellat, est reiciendis eos quibusdam doloribus praesentium non, vel rerum, ipsam tenetur? Aperiam.</p>
+            <p>Consequatur, earum? Numquam consequatur modi doloremque beatae optio. Quae sed quos amet maiores ex, animi deserunt debitis vitae in dolorem.</p>
+            <p>Itaque nostrum impedit voluptas eveniet recusandae eaque in repudiandae, nesciunt sunt rem possimus nemo quis blanditiis incidunt dicta nam. Corrupti.</p>
+            <p>Quibusdam necessitatibus provident pariatur, doloremque quidem ipsum, obcaecati quo perspiciatis, nostrum ex quae. Vero ab earum, modi eius veniam dignissimos?</p>
+            <p>Eaque aliquid facilis dolore adipisci soluta officia obcaecati excepturi ab iste et. Consequatur odit voluptates nostrum inventore obcaecati reiciendis at?</p>
+            <p>Error id, sequi eveniet repellat excepturi quod dolor aliquam voluptate nisi neque iure laboriosam ut quasi omnis, accusantium adipisci sed.</p>
+            <p>Iste cum veritatis beatae dolores repellat eaque repellendus quas quo ducimus veniam quasi velit nostrum, rerum, eius laborum labore voluptatum.</p>
+            <p>Ad quod temporibus assumenda rem? Sint accusantium, reprehenderit repellat neque eius qui asperiores alias dolorum quam possimus provident cum modi!</p>
+            <p>Aliquid eius optio, repudiandae dolore eaque inventore non, officiis excepturi expedita voluptatibus quisquam quis. Voluptatibus aliquid atque dignissimos nulla quisquam!</p>
+            <p>Natus asperiores a dolore praesentium ab? Architecto vitae suscipit laboriosam beatae ullam sint maiores voluptatem repudiandae, impedit voluptates totam deserunt?</p>
+            <p>Dolorem, explicabo, cupiditate quibusdam numquam ex asperiores nesciunt error voluptatibus officia debitis provident eaque amet aliquid molestias. Harum, totam inventore.</p>
+            <p>Eum dicta eaque quis, pariatur nihil exercitationem vitae, id officia, asperiores velit dolores tenetur sit modi harum molestiae ea consequuntur!</p>
+            <p>Alias laborum ea autem quam. Amet ut quia possimus officiis, assumenda, harum unde sed adipisci perspiciatis sint expedita dolor odio.</p>
+            <p>Animi sint repudiandae perspiciatis eius accusantium doloremque rerum eveniet! Voluptatem, earum. Alias eos ex pariatur ipsa iusto ipsam nobis beatae?</p>
         </section>
-
     </main>
     <footer id="footer-main">
         <form>

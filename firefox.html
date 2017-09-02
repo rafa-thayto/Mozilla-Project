@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Firefox | Download</title>
+        <title>Firefox — Download</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="media/icon/moz-favicon.png" type="image/x-icon">        
@@ -15,11 +15,57 @@
                     <li><a href="firefox.html" class="firefox">Firefox</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="sign-in.html">Sign in</a></li>
-                    <li><a href="#historia">História</a></li>
-                    <li><a href="#inovacoes">Inovações Web</a></li>
+                    <li><a href="index.html#historia">História</a></li>
+                    <li><a href="index.html#inovacoes">Inovações Web</a></li>
                     <li><a href="index.html#">Home</a></li>
                 </ul>
             </nav>
+            <!-- Sign in -->
+        <div class="modal" id="sign-in">
+                <div class="modal-container">
+                    <form action="POST">
+                        <fieldset>
+                            <!-- Botão para sair do modal -->
+                            <a href="#">x</a>
+                            <!-- Nome -->
+                            <div class="campo">    
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome">
+                            </div>
+                            <!-- Sobrenome -->
+                            <div class="campo">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" name="sobrenome" id="sobrenome">
+                            </div>
+                            <!-- Senha -->
+                            <div class="campo">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" id="senha">
+                            </div>
+                            <!-- Email -->
+                            <div class="campo">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <!-- Mensagem do usuário -->
+                            <div class="campo">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
+                            </div>
+                            <!-- Verificação de receber a Newsletter -->
+                            <div class="campo">
+                                <label for="newsletter"><input type="checkbox" name="newsletter" value="aceito">
+                                    Gostaria de receber a Newsletter
+                                </label>
+                            </div>
+                            <!-- Botão para enviar -->
+                            <div class="campo">
+                                <input type="submit" name="botao" id="btn-submit">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </header>
 
         <main id="main-firefox">
