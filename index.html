@@ -7,7 +7,7 @@
     <meta name="author" content="Rafael Thayto">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="media/icon/moz-favicon.png" type="image/x-icon">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modal.css">
 </head>
 
@@ -15,8 +15,8 @@
 
     <header id="header-main">
         <nav id="nav-main">
-            <ul class="">
-                <img src="media/img/mozilla-logo.svg" alt="Mozilla" class="head-logo">
+            <ul>
+                <img src="media/img/mozilla-logo.svg" alt="Mozilla">
                 <li><a href="firefox.html" class="firefox">Firefox</a></li>
                 <li><a href="#">Login</a></li>
                 <li><a href="#sign-in">Sign in</a></li>
@@ -25,7 +25,7 @@
                 <li><a href="#">Home</a></li>
             </ul>
         </nav>
-        
+
         <!-- Sign in -->
         <div class="modal" id="sign-in">
             <div class="modal-container">
@@ -34,7 +34,7 @@
                         <!-- Botão para sair do modal -->
                         <a href="#" class="close">x</a>
                         <!-- Nome -->
-                        <div class="campo">    
+                        <div class="campo">
                             <label for="nome">NOME</label>
                             <input type="text" name="nome" id="nome">
                         </div>
@@ -72,11 +72,12 @@
 
         <section id="mozilla">
             <h2>Internet para as pessoas, sem fins lucrativos.</h2>
-            <p>Olá. Nós somos a Mozilla, os orgulhosos campeões da Internet, ajudando para mantê-la saudável, aberta e acessível a todos.</p>
+            <p>Olá. Nós somos a Mozilla, os orgulhosos campeões da Internet, ajudando para mantê-la saudável, aberta e acessível
+                a todos.</p>
         </section>
 
         <section id="inovacoes">
-            <h2>Inovações Web</h2>  
+            <h2>Inovações Web</h2>
         </section>
 
         <section id="historia">
@@ -84,25 +85,24 @@
         </section>
     </main>
     <footer id="footer-main">
+        <img src="media/img/mozilla-logo.svg" alt="Mozilla" class="invert">
         <form>
-            <fieldset>
-                <div class="container">
-                    <!-- Nome -->
-                    <div class="campo">    
-                        <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="DIGITE SEU NOME">
-                    </div>
-                    <!-- Verificação de receber as novidades do Firefox -->
-                    <div class="campo">
-                        <label for="email-f-news">Receba as novidades do Firefox</label>
-                        <input type="email" name="email-f-news" id="email-f-news" placeholder="DIGITE SEU E-MAIL">
-                    </div>
-                    <!-- Botão para enviar -->
-                    <div class="campo">
-                        <input type="submit" name="botao" id="btn-submit" value="Inscreva-me">
-                    </div>
+            <div class="container">
+                <!-- Nome -->
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="DIGITE SEU NOME">
                 </div>
-            </fieldset>
+                <!-- Verificação de receber as novidades do Firefox -->
+                <div class="campo">
+                    <label for="email-f-news">Receba as novidades do Firefox</label>
+                    <input type="email" name="email-f-news" id="email-f-news" placeholder="DIGITE SEU E-MAIL">
+                </div>
+                <!-- Botão para enviar -->
+                <div class="campo">
+                    <input type="submit" name="botao" id="btn-submit" value="Inscreva-me">
+                </div>
+            </div>
         </form>
     </footer>
 

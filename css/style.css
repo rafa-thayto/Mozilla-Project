@@ -9,7 +9,7 @@
     font-family: 'Roboto', 'Segoe UI', 'Arial', sans-serif;
 }
 
-body { color: #232323; display: block; }
+body { color: #232323; display: block; background: #F9F9F9 }
 
 /* Helpful */
 .width100 { width: 100%; }
@@ -17,7 +17,9 @@ body { color: #232323; display: block; }
 .width50 { width: 50%; }
 .reft { text-align: left; }
 .right { text-align: right; }
-.center
+.center { text-align: center; }
+.invert { filter: invert(1); }
+
 
 header {
     border: 1px 0px solid #ccc;
@@ -25,7 +27,7 @@ header {
 
 main {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -76,45 +78,17 @@ main {
     text-decoration: underline;
 }
 
-#nav-main li a.firefox {
-    color: #f1f1f1;
-    background-color: #303030;
-}
-
-#nav-main li a.firefox:hover {
-    background: #7F63FF;
-}
+#nav-main li a.firefox { color: #f1f1f1; background-color: #303030; }
+#nav-main li a.firefox:hover { background: #7F63FF; }
 
 #footer-main {
     background: linear-gradient(to right, #7F63FF, #4DA0FF, #1ADDFF, #00CCDA, #00D59E, #00DE5E);
 }
 
 
-/* Firefox page */
+span.link { color: #7659FF; }
 
-#main-firefox section,
-#main-firefox header {
-    background-color: #F9F9F9;
-}
-
-
-/* Util */
-
-.centro {
-    text-align: center;
-}
-
-.justify {
-    text-align: justify;
-}
-
-span.link {
-    color: #7659FF;
-}
-
-span.link:hover {
-    color: #6A49FE;
-}
+span.link:hover { color: #6A49FE; }
 
 /* Responsiveness */
 

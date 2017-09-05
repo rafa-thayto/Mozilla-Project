@@ -1,11 +1,11 @@
 /* Import Roboto Font */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-p {
-    margin-top: 0;
+p { margin-top: 0; }
+
+div+label {
+    font-family: 'Roboto', sans-serif;
 }
-
-
 /* Configuring close button */
 
 a.close {
@@ -20,10 +20,7 @@ a.close {
     -moz-transition: color 0.5s;
     transition: color 0.5s;
 }
-
-a.close:hover {
-    color: #000000;
-}
+a.close:hover { color: #000000; }
 
 
 /* Configuring modal */
@@ -75,5 +72,4 @@ input {
 .campo label {
     display: block;
     font-size: 12px;
-    font-family:
 }
