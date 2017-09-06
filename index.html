@@ -31,36 +31,50 @@
             <div class="modal-container">
                 <form action="POST">
                     <fieldset>
+                        <div class="legend">
+                            <legend class="modal-legend">Sign-in</legend>
+                        </div>
                         <!-- Botão para sair do modal -->
                         <a href="#" class="close">x</a>
-                        <!-- Nome -->
-                        <div class="campo">
-                            <label for="nome">NOME</label>
-                            <input type="text" name="nome" id="nome">
-                        </div>
-                        <!-- Sobrenome -->
-                        <div class="campo">
-                            <label for="sobrenome">SOBRENOME</label>
-                            <input type="text" name="sobrenome" id="sobrenome">
+                        
+                        <div class="duo-campo">
+                            <!-- Nome -->
+                            <div class="campo metade">
+                                <label for="nome">NOME</label>
+                                <div class="center">
+                                    <input type="text" name="nome" id="nome">
+                                </div>
+                            </div>
+                            <!-- Sobrenome -->
+                            <div class="campo metade">
+                                <label for="sobrenome">SOBRENOME</label>
+                                <div class="center">
+                                    <input type="text" name="sobrenome" id="sobrenome">
+                                </div>
+                            </div>
                         </div>
                         <!-- Senha -->
                         <div class="campo">
                             <label for="senha">SENHA</label>
-                            <input type="password" name="senha" id="senha">
+                            <div class="center">
+                                <input type="password" name="senha" id="senha">
+                            </div>
                         </div>
                         <!-- Email -->
                         <div class="campo">
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <div class="center">
+                                <input type="email" name="email" id="email">
+                            </div>
                         </div>
                         <!-- Verificação se aceita os termos de uso -->
-                        <div class="campo">
+                        <div class="campo pointer">
                             <label for="termos"><input type="checkbox" name="termos" value="aceito" id="termos">
                                 Aceito os <span class="link">termos</span> de uso
                             </label>
                         </div>
                         <!-- Botão para enviar -->
-                        <div class="campo">
+                        <div class="campo submit pointer">
                             <input type="submit" name="botao" id="btn-submit">
                         </div>
                     </fieldset>
@@ -68,9 +82,11 @@
             </div>
         </div>
     </header>
+
     <main>
 
-        <section id="mozilla">
+        <section id="mozilla" class="center">
+            <img src="media/gifs/bridge.gif" alt="Gif de uma ponte" class="background-gif">
             <h2>Internet para as pessoas, sem fins lucrativos.</h2>
             <p>Olá. Nós somos a Mozilla, os orgulhosos campeões da Internet, ajudando para mantê-la saudável, aberta e acessível
                 a todos.</p>
@@ -78,32 +94,36 @@
 
         <section id="inovacoes">
             <h2>Inovações Web</h2>
+            <p>Trazendo a Realidade Virtual para a plataforma web</p>        
+            <p>Utilizando WebVR, desenvolvedores, designers e artistas podem compartilhar experiências com VR na web.</p>
         </section>
 
         <section id="historia">
             <h2>História</h2>
+            <p>
+                O projeto Mozilla foi criado em 1998 com o lançamento do código fonte da suite do navedador Netscape. Ele tinha a intenção de aproveitar o poder criativo de milhares de programadores na internet e os altos níveis sem precedentes de inovação no mercado de navegadores. No primeiro ano, novos membros da comunidade de todo o mundo já tinha contribuído com novas funcionalidades, aprimorando recursos existentes e se envolvendo na gestão e planejamento do projeto. 
+            </p>
         </section>
     </main>
     <footer id="footer-main">
-        <div class="center"><img src="media/img/mozilla-logo-branco.png" alt="Mozilla" class="footer-logo"></div>
-        <form>
-            <div class="container">
-                <!-- Nome -->
-                <div class="campo">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="DIGITE SEU NOME">
-                </div>
-                <!-- Verificação de receber as novidades do Firefox -->
-                <div class="campo">
-                    <label for="email-f-news">Receba as novidades do Firefox</label>
-                    <input type="email" name="email-f-news" id="email-f-news" placeholder="DIGITE SEU E-MAIL">
-                </div>
-                <!-- Botão para enviar -->
-                <div class="campo">
-                    <input type="submit" name="botao" id="btn-submit" value="Inscreva-me">
-                </div>
+        <div class="center">
+            <img src="media/img/mozilla-logo-branco.png" alt="Mozilla" class="footer-logo">
+            <img src="media/img/nightly-logo.png" alt="firefox">
+
+            <div class="firefox-download">
+                <h2 class="italic">Liberte a sua Internet</h2>
+                <p class="italic">Mantenha a Web livre e sua mente a seguirá.</p>
+                <address>
+                    <a href="https://www.mozilla.org/pt-BR/firefox/nightly/all/">Baixe o Nightly Hoje</a>
+                </address>
             </div>
-        </form>
+        </div>
+
+        <div class="rodape">
+                <h3>
+                    Trechos deste conteúdo possuem direitos reservados (©1998–2017) por colaboradores da mozilla.org. Conteúdo disponível sob a licença Creative Commons.
+                </h3>
+        </div>
     </footer>
 
 </body>
