@@ -18,6 +18,7 @@ body { color: #232323; display: block; background: #F9F9F9 }
 .reft { text-align: left; }
 .right { text-align: right; }
 .center { text-align: center; }
+.centralize { width: 100%; margin-left: auto; margin-right: auto;}
 .invert { filter: invert(1); }
 
 
@@ -42,7 +43,7 @@ main {
     top: 0;
 }
 
-#nav-main img {
+#nav-main .header-logo {
     height: 30px;
     margin: 10px 20px 0;
     padding: 0 12px;
@@ -82,8 +83,15 @@ main {
 #nav-main li a.firefox:hover { background: #7F63FF; }
 
 #footer-main {
-    background: linear-gradient(to right, #7F63FF, #4DA0FF, #1ADDFF, #00CCDA, #00D59E, #00DE5E);
+    background: #000000;
 }
+
+/* #footer-main .footer-logo {
+    height: 300px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: calc(100% - 400px);
+} */
 
 
 span.link { color: #7659FF; }
