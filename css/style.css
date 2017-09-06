@@ -29,8 +29,7 @@ header {
 
 main {
     width: 100%;
-    margin-top: 20px;
-    padding: 30px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -81,7 +80,7 @@ main {
 }
 
 #nav-main li a.firefox { color: #f1f1f1; background-color: #303030; }
-#nav-main li a.firefox:hover { background: #7F63FF; }
+#nav-main li a.firefox:hover { background: #7F62FF; }
 
 #footer-main {
     background: #000000;
@@ -93,17 +92,10 @@ main {
     display: block;
 }
 
-/* Main */
-#mozilla .background-gif {
-    width: 100%;
-    z-index: -1;
-    height: 50vh;
-}
-
-
 span.link { color: #7659FF; }
 span.link:hover { color: #6A49FE; }
 
+/* Footer */
 #footer-main {
     overflow: hidden;
 }
