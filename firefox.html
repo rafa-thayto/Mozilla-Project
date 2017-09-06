@@ -28,36 +28,50 @@
             <div class="modal-container">
                 <form action="POST">
                     <fieldset>
+                        <div class="legend">
+                            <legend class="modal-legend">Sign-in</legend>
+                        </div>
                         <!-- Botão para sair do modal -->
                         <a href="#" class="close">x</a>
-                        <!-- Nome -->
-                        <div class="campo">
-                            <label for="nome">NOME</label>
-                            <input type="text" name="nome" id="nome">
-                        </div>
-                        <!-- Sobrenome -->
-                        <div class="campo">
-                            <label for="sobrenome">SOBRENOME</label>
-                            <input type="text" name="sobrenome" id="sobrenome">
+
+                        <div class="duo-campo">
+                            <!-- Nome -->
+                            <div class="campo metade">
+                                <label for="nome">NOME</label>
+                                <div class="center">
+                                    <input type="text" name="nome" id="nome">
+                                </div>
+                            </div>
+                            <!-- Sobrenome -->
+                            <div class="campo metade">
+                                <label for="sobrenome">SOBRENOME</label>
+                                <div class="center">
+                                    <input type="text" name="sobrenome" id="sobrenome">
+                                </div>
+                            </div>
                         </div>
                         <!-- Senha -->
                         <div class="campo">
                             <label for="senha">SENHA</label>
-                            <input type="password" name="senha" id="senha">
+                            <div class="center">
+                                <input type="password" name="senha" id="senha">
+                            </div>
                         </div>
                         <!-- Email -->
                         <div class="campo">
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <div class="center">
+                                <input type="email" name="email" id="email">
+                            </div>
                         </div>
                         <!-- Verificação se aceita os termos de uso -->
-                        <div class="campo">
+                        <div class="campo pointer">
                             <label for="termos"><input type="checkbox" name="termos" value="aceito" id="termos">
-                                Aceito os <span class="link">termos</span> de uso
-                            </label>
+                                    Aceito os <span class="link">termos</span> de uso
+                                </label>
                         </div>
                         <!-- Botão para enviar -->
-                        <div class="campo">
+                        <div class="campo submit pointer">
                             <input type="submit" name="botao" id="btn-submit">
                         </div>
                     </fieldset>
@@ -75,7 +89,7 @@
             </div>
         </header>
 
-        <section id="beta" class="justify">
+        <section id="beta" class="centro">
             <div class="container">
                 <img src="media/img/beta-logo.png" alt="Mozilla Beta Logo">
                 <h2>Beta</h2>
@@ -83,7 +97,7 @@
             </div>
         </section>
 
-        <section id="dev" class="justify">
+        <section id="dev" class="centro">
             <div class="container">
                 <img src="media/img/developer-logo.png" alt="Mozilla Developer Logo">
                 <h2>Developer Edition</h2>
@@ -91,7 +105,7 @@
             </div>
         </section>
 
-        <section id="nightly" class="justify">
+        <section id="nightly" class="centro">
             <div class="container">
                 <img src="media/img/nightly-logo.png" alt="Mozilla Nightly Logo">
                 <h2>Nightly</h2>
@@ -106,24 +120,25 @@
     </main>
 
     <footer>
-        <form>
-            <fieldset>
-                <!-- Nome -->
-                <div class="campo">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="DIGITE SEU NOME">
-                </div>
-                <!-- Verificação de receber as novidades do Firefox -->
-                <div class="campo">
-                    <label for="email-f-news">Receba as novidades do Firefox</label>
-                    <input type="email" name="email-f-news" id="email-f-news" placeholder="DIGITE SEU E-MAIL">
-                </div>
-                <!-- Botão para enviar -->
-                <div class="campo">
-                    <input type="submit" name="botao" id="btn-submit" value="Inscreva-me">
-                </div>
-            </fieldset>
-        </form>
+        <div class="center">
+            <img src="media/img/mozilla-logo-branco.png" alt="Mozilla" class="footer-logo">
+            <img src="media/img/nightly-logo.png" alt="firefox">
+
+            <div class="firefox-download">
+                <h2 class="italic">Liberte a sua Internet</h2>
+                <p class="italic">Mantenha a Web livre e sua mente a seguirá.</p>
+                <address>
+                    <a href="https://www.mozilla.org/pt-BR/firefox/nightly/all/">Baixe o Nightly Hoje</a>
+                </address>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <h3>
+                Trechos deste conteúdo possuem direitos reservados (©1998–2017) por colaboradores da mozilla.org. Conteúdo disponível sob
+                a licença Creative Commons.
+            </h3>
+        </div>
     </footer>
 </body>
 
