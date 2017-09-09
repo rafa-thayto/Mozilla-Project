@@ -36,46 +36,44 @@
                         </div>
                         <!-- Botão para sair do modal -->
                         <a href="#" class="close">x</a>
+                        <!-- Container dentro do modal -->
                         
-                        <div class="duo-campo">
+                        <div class="modal-content">
                             <!-- Nome -->
-                            <div class="campo metade">
-                                <label for="nome">NOME</label>
-                                <div class="center">
-                                    <input type="text" name="nome" id="nome">
-                                </div>
+                            <div class="campo">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome">
                             </div>
                             <!-- Sobrenome -->
-                            <div class="campo metade">
-                                <label for="sobrenome">SOBRENOME</label>
+                            <div class="campo">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" name="sobrenome" id="sobrenome">
+                            </div>
+                        
+                            <!-- Senha -->
+                            <div class="campo">
+                                <label for="senha">Senha</label>
                                 <div class="center">
-                                    <input type="text" name="sobrenome" id="sobrenome">
+                                    <input type="password" name="senha" id="senha">
                                 </div>
                             </div>
-                        </div>
-                        <!-- Senha -->
-                        <div class="campo">
-                            <label for="senha">SENHA</label>
-                            <div class="center">
-                                <input type="password" name="senha" id="senha">
+                            <!-- Email -->
+                            <div class="campo">
+                                <label for="email">EMAIL</label>
+                                <div class="center">
+                                    <input type="email" name="email" id="email">
+                                </div>
                             </div>
-                        </div>
-                        <!-- Email -->
-                        <div class="campo">
-                            <label for="email">EMAIL</label>
-                            <div class="center">
-                                <input type="email" name="email" id="email">
+                            <!-- Verificação se aceita os termos de uso -->
+                            <div class="campo pointer">
+                                <label for="termos"><input type="checkbox" name="termos" value="aceito" id="termos">
+                                    Aceito os <span class="link">termos</span> de uso
+                                </label>
                             </div>
-                        </div>
-                        <!-- Verificação se aceita os termos de uso -->
-                        <div class="campo pointer">
-                            <label for="termos"><input type="checkbox" name="termos" value="aceito" id="termos">
-                                Aceito os <span class="link">termos</span> de uso
-                            </label>
-                        </div>
-                        <!-- Botão para enviar -->
-                        <div class="campo submit pointer">
-                            <input type="submit" name="botao" id="btn-submit">
+                            <!-- Botão para enviar -->
+                            <div class="campo submit pointer">
+                                <input type="submit" name="botao" id="btn-submit">
+                            </div>
                         </div>
                     </fieldset>
                 </form>

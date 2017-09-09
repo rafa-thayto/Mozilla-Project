@@ -1,8 +1,11 @@
 /* Import Roboto Font */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+div.campo+label {
+    font-family: 'Roboto', sans-serif;
+}
 
 
-div.campo+label { font-family: 'Roboto', sans-serif; }
 /* Configuring close button */
 
 a.close {
@@ -15,28 +18,32 @@ a.close {
     color: #606060;
     -webkit-transition: color 0.5s;
     -moz-transition: color 0.5s;
-    transition: color 0.5s; }
-a.close:hover { 
-    color: #000000;
-    cursor: pointer; }
+    transition: color 0.5s;
+}
+
+a.close:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+}
 
 
 /* Configuring modal */
 
 .modal-container {
     position: fixed;
-    background-color: #fff;
+    background-color: #2B2E41;
     width: 70%;
     max-width: 600px;
     left: 50%;
-    padding: 20px;
-    border-radius: 5px;
+    border-radius: 1px;
+    border: 1px solid #303030;
     -webkit-transform: translate(-60%, -300%);
     -moz-transform: translate(-60%, -300%);
     transform: translate(-60%, -300%);
     -webkit-transition: transform .2s ease-out;
     -moz-transition: transform .2s ease-out;
-    transition: transform .2s ease-out; }
+    transition: transform .2s ease-out;
+}
 
 .modal::before {
     content: "";
@@ -50,40 +57,68 @@ a.close:hover {
 }
 
 .modal:target::before {
-    display: block; }
+    display: block;
+}
 
 .modal:target .modal-container {
-    transform: translate(-50%, 0); }
+    transform: translate(-50%, 0);
+}
+
+.modal-content {
+    padding: 0 2vw;
+}
 
 .modal fieldset {
-    border: none;}
+    border: none;
+}
 
 .modal .modal-legend {
     display: block;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: 10px;
-    font-weight: 600;
-    text-shadow: 0px 0px 0.5px #606060;
+    padding: 1.5vh;
     text-align: center;
-    border-radius: 2.5px;
-    background-image: linear-gradient(to right,#7F63FF, #1ADDFF);
-    color: white;}
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #ffffff;
+    border-radius: 1px;
+    border: 1px solid #8B55FF;
+}
 
 .modal .submit {
     display: flex;
-    justify-content: flex-end;}
+    justify-content: flex-end;
+}
 
 .modal .legend {
     display: flex;
-    justify-content: center; }
-    
+    justify-content: center;
+}
+
+.campo {
+    color: #fcfcfc;
+    display: flex;
+}
 
 .campo input {
     background-color: rgba(0, 0, 0, 0);
+    color: #fcfcfc;
     border: none;
-    border-bottom: 1px solid #FF8C8E; }
+    border-bottom: 1px solid #FF8C8E;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.campo label::after {
+    content: ':';
+    color: white;
+}
 
 .submit input {
     padding: 5px 20px;
@@ -91,21 +126,15 @@ a.close:hover {
     border: 2px solid green;
     background-color: #F4F4F4;
 }
-.duo-campo {
-    display: flex;
-    justify-content: space-around;}
 
-.campo label {
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center; }
+.pointer label,
+.pointer input {
+    cursor: pointer;
+}
 
-.pointer label, .pointer input{
-    cursor: pointer; }
-
-.campo div.center input{
-    width: 100%;}
+.campo div.center input {
+    width: 100%;
+}
 
 .metade {
     width: calc(50% - 20px);
