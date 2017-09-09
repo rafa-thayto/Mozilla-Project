@@ -105,7 +105,7 @@ a.close:hover {
     background-color: rgba(0, 0, 0, 0);
     color: #fcfcfc;
     border: none;
-    border-bottom: 1px solid #FF8C8E;
+    border-bottom: 1px solid #8B55FF;
 }
 
 .campo label {
@@ -120,11 +120,33 @@ a.close:hover {
     color: white;
 }
 
-.submit input {
+.submit input[type=submit] {
     padding: 5px 20px;
-    border-radius: 2.5px;
-    border: 2px solid green;
-    background-color: #F4F4F4;
+    margin: 0.875vh 0;
+    border-radius: 1px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #532EFF;
+    background-color: #10142D;
+}
+
+.submit input[type=submit]:focus {
+    animation: btn-press 1s ease-in-out .3s 1;
+}
+
+@keyframes btn-press {
+    from { background-color: #10142D; }
+    to { background-color: #1D213E; }
+}
+
+.submit input[type=submit]:hover {
+    animation: btn-spin 1s ease-in-out 0s infinite;
+}
+
+@keyframes btn-spin {
+    0% { border-left: 2px solid #532EFF; }
+    50% { border-top: 2px solid #532EFF; }
+    75% { border-right: 2px solid #532EFF;}
+    100% { border-bottom: 2px solid #532EFF; }
 }
 
 .pointer label,
