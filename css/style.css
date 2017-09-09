@@ -50,16 +50,14 @@ main {
 }
 
 #nav-main ul {
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
     overflow: hidden;
     background: linear-gradient(to right, #7F63FF, #4DA0FF, #1ADDFF, #00CCDA, #00D59E, #00DE5E);
 }
 
-#nav-main li {
-    float: right;
-}
-
-#nav-main ul li {
+#nav-main ul div {
     display: flex;
     justify-content: flex-end;
 }
@@ -123,11 +121,15 @@ address a:hover { text-decoration: underline;}
 /* Responsiveness */
 
 @media screen and (max-width: 700px) {
-    #nav-main ul li,
-    #nav-main li {
-        float: none;
+    #nav-main ul {
+        background-image: linear-gradient(to right, #7F63FF, #00CCDA, #00DE5E);
+    }
+    #nav-main ul,
+    #nav-main ul div {
+        flex-direction: column;
+        justify-content: center;
     }
     main {
-        margin-top: 320px;
+        margin-top: 340px;
     }
 }

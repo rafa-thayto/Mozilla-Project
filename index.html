@@ -17,65 +17,65 @@
         <nav id="nav-main">
             <ul>
                 <img src="media/img/mozilla-logo.svg" alt="Mozilla" class="header-logo">
-                <li><a href="firefox.html" class="firefox">Firefox</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#sign-in">Sign in</a></li>
-                <li><a href="#historia">História</a></li>
-                <li><a href="#inovacoes">Inovações Web</a></li>
-                <li><a href="#">Home</a></li>
+                <div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#inovacoes">Inovações Web</a></li>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#sign-in">Sign in</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="firefox.html" class="firefox">Firefox</a></li>
+                </div>
             </ul>
         </nav>
 
         <!-- Sign in -->
         <div class="modal" id="sign-in">
             <div class="modal-container">
-                <form action="POST">
-                    <fieldset>
-                        <div class="legend">
-                            <legend class="modal-legend">Sign-in</legend>
+                <form>
+                    <div class="legend">
+                        <legend class="modal-legend">Sign-in</legend>
+                    </div>
+                    <!-- Botão para sair do modal -->
+                    <a href="#" class="close">x</a>
+                    <!-- Container dentro do modal -->
+
+                    <div class="modal-content">
+                        <!-- Nome -->
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
                         </div>
-                        <!-- Botão para sair do modal -->
-                        <a href="#" class="close">x</a>
-                        <!-- Container dentro do modal -->
-                        
-                        <div class="modal-content">
-                            <!-- Nome -->
-                            <div class="campo">
-                                <label for="nome">Nome</label>
-                                <input type="text" name="nome" id="nome">
-                            </div>
-                            <!-- Sobrenome -->
-                            <div class="campo">
-                                <label for="sobrenome">Sobrenome</label>
-                                <input type="text" name="sobrenome" id="sobrenome">
-                            </div>
-                        
-                            <!-- Senha -->
-                            <div class="campo">
-                                <label for="senha">Senha</label>
-                                <div class="center">
-                                    <input type="password" name="senha" id="senha">
-                                </div>
-                            </div>
-                            <!-- Email -->
-                            <div class="campo">
-                                <label for="email">EMAIL</label>
-                                <div class="center">
-                                    <input type="email" name="email" id="email">
-                                </div>
-                            </div>
-                            <!-- Verificação se aceita os termos de uso -->
-                            <div class="campo pointer">
-                                <label for="termos"><input type="checkbox" name="termos" value="aceito" id="termos">
-                                    Aceito os <span class="link">termos</span> de uso
-                                </label>
-                            </div>
-                            <!-- Botão para enviar -->
-                            <div class="campo submit pointer">
-                                <input type="submit" name="botao" id="btn-submit">
+                        <!-- Sobrenome -->
+                        <div class="campo">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome">
+                        </div>
+
+                        <!-- Senha -->
+                        <div class="campo">
+                            <label for="senha">Senha</label>
+                            <div class="center">
+                                <input type="password" name="senha" id="senha">
                             </div>
                         </div>
-                    </fieldset>
+                        <!-- Email -->
+                        <div class="campo">
+                            <label for="email">EMAIL</label>
+                            <div class="center">
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <!-- Verificação se aceita os termos de uso -->
+                        <div class="campo pointer">
+                            <label for="termos"><input type="checkbox" name="termos" value="aceito" id="termos">
+                                Aceito os <span class="link">termos</span> de uso
+                            </label>
+                        </div>
+                        <!-- Botão para enviar -->
+                        <div class="campo submit pointer">
+                            <input type="submit" name="botao" id="btn-submit">
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -91,14 +91,18 @@
 
         <section id="inovacoes">
             <h2>Inovações Web</h2>
-            <p>Trazendo a Realidade Virtual para a plataforma web</p>        
+            <p>Trazendo a Realidade Virtual para a plataforma web</p>
             <p>Utilizando WebVR, desenvolvedores, designers e artistas podem compartilhar experiências com VR na web.</p>
         </section>
 
         <section id="historia">
             <h2>História</h2>
             <p>
-                O projeto Mozilla foi criado em 1998 com o lançamento do código fonte da suite do navedador Netscape. Ele tinha a intenção de aproveitar o poder criativo de milhares de programadores na internet e os altos níveis sem precedentes de inovação no mercado de navegadores. No primeiro ano, novos membros da comunidade de todo o mundo já tinha contribuído com novas funcionalidades, aprimorando recursos existentes e se envolvendo na gestão e planejamento do projeto. 
+                O projeto Mozilla foi criado em 1998 com o lançamento do código fonte da suite do navedador Netscape. Ele tinha a intenção
+                de aproveitar o poder criativo de milhares de programadores na internet e os altos níveis sem precedentes
+                de inovação no mercado de navegadores. No primeiro ano, novos membros da comunidade de todo o mundo já tinha
+                contribuído com novas funcionalidades, aprimorando recursos existentes e se envolvendo na gestão e planejamento
+                do projeto.
             </p>
         </section>
     </main>
@@ -117,12 +121,24 @@
         </div>
 
         <div class="rodape">
-                <h3>
-                    Trechos deste conteúdo possuem direitos reservados (©1998–2017) por colaboradores da mozilla.org. Conteúdo disponível sob a licença Creative Commons.
-                </h3>
+            <h3>
+                Trechos deste conteúdo possuem direitos reservados (©1998–2017) por colaboradores da mozilla.org. Conteúdo disponível sob
+                a licença Creative Commons.
+            </h3>
         </div>
     </footer>
+<script>
+    window.onload = function() {
+        var btn = getElementById('btn-submit');
+        
+        btn.eventListener('click', )
+    } 
 
+    function eventClick (event) {
+        
+    }
+
+</script>
 </body>
 
 </html>
