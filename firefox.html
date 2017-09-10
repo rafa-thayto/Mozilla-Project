@@ -15,51 +15,53 @@
         <nav id="nav-main">
             <ul class="">
                 <img src="media/img/mozilla-logo.svg" alt="Mozilla" class="header-logo">
-                <li><a href="firefox.html" class="firefox">Firefox</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#sign-in">Sign in</a></li>
-                <li><a href="index.html#historia">História</a></li>
-                <li><a href="index.html#inovacoes">Inovações Web</a></li>
-                <li><a href="index.html#">Home</a></li>
+                <div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#inovacoes">Inovações Web</a></li>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#sign-in">Sign in</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="firefox.html" class="firefox">Firefox</a></li>
+                </div>
             </ul>
         </nav>
         <!-- Sign in -->
         <div class="modal" id="sign-in">
             <div class="modal-container">
                 <form action="POST">
-                    <fieldset>
-                        <div class="legend">
-                            <legend class="modal-legend">Sign-in</legend>
-                        </div>
-                        <!-- Botão para sair do modal -->
-                        <a href="#" class="close">x</a>
+                    <div class="legend">
+                        <legend class="modal-legend">Cadastrar-se</legend>
+                    </div>
+                    <!-- Botão para sair do modal -->
+                    <a href="#" class="close">x</a>
+                    <!-- Container dentro do modal -->
 
-                        <div class="duo-campo">
-                            <!-- Nome -->
-                            <div class="campo metade">
-                                <label for="nome">NOME</label>
-                                <div class="center">
-                                    <input type="text" name="nome" id="nome">
-                                </div>
-                            </div>
-                            <!-- Sobrenome -->
-                            <div class="campo metade">
-                                <label for="sobrenome">SOBRENOME</label>
-                                <div class="center">
-                                    <input type="text" name="sobrenome" id="sobrenome">
-                                </div>
-                            </div>
+                    <div class="modal-content">
+                        <!-- Nome -->
+                        <div class="campo">
+                            <label for="username">Nome de Usuário</label>
+                            <input type="text" name="username" id="username">
                         </div>
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <!-- Sobrenome -->
+                        <div class="campo">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome">
+                        </div>
+
                         <!-- Senha -->
                         <div class="campo">
-                            <label for="senha">SENHA</label>
+                            <label for="senha">Senha</label>
                             <div class="center">
                                 <input type="password" name="senha" id="senha">
                             </div>
                         </div>
                         <!-- Email -->
                         <div class="campo">
-                            <label for="email">EMAIL</label>
+                            <label for="email">Email</label>
                             <div class="center">
                                 <input type="email" name="email" id="email">
                             </div>
@@ -67,17 +69,61 @@
                         <!-- Verificação se aceita os termos de uso -->
                         <div class="campo pointer">
                             <label for="termos"><input type="checkbox" name="termos" value="aceito" id="termos">
-                                    Aceito os <span class="link">termos</span> de uso
-                                </label>
+                                Aceito os <span class="link">termos</span> de uso
+                            </label>
                         </div>
                         <!-- Botão para enviar -->
                         <div class="campo submit pointer">
-                            <input type="submit" name="botao" id="btn-submit">
+                            <input type="submit" name="botao" id="btn-submit-sign-in" value="Cadastrar-se">
                         </div>
-                    </fieldset>
+                    </div>
                 </form>
             </div>
         </div>
+        <!-- Fim Sign in -->
+
+        <!-- Login -->
+        <div class="modal" id="login">
+            <div class="modal-container">
+                <form>
+                    <div class="legend">
+                        <legend class="modal-legend">Fazer login</legend>
+                    </div>
+                    <!-- Botão para sair do modal -->
+                    <a href="#" class="close">x</a>
+                    <!-- Container dentro do modal -->
+
+                    <div class="modal-content">
+                        <!-- Nome de usuário -->
+                        <div class="campo">
+                            <label for="username">Nome de Usuário</label>
+                            <input type="text" name="username" id="username">
+                        </div>
+                        <!-- Senha -->
+                        <div class="campo">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha">
+                        </div>
+                        <!-- Email -->
+                        <div class="campo">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <!-- Verificação se aceita os termos de uso -->
+                        <div class="campo pointer">
+                            <label for="termos"><input type="checkbox" name="termos" value="aceito" id="termos">
+                                Aceito os <span class="link">termos</span> de uso
+                            </label>
+                        </div>
+                        <!-- Botão para enviar -->
+                        <div class="campo submit pointer">
+                            <input type="submit" name="botao" id="btn-submit-login" value="Fazer login">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Fim Login -->
     </header>
 
     <main id="main-firefox">
