@@ -178,13 +178,21 @@
     </footer>
     <script>
         window.onload = function () {
-            var btn = document.getElementById('btn-submit-sign-in', 'btn-submit-login');
-            btn.addEventListener('click', eventClick);
+            var btnSign = document.getElementById('btn-submit-sign-in');
+            btn.addEventListener('click', eventClickCadastro);
+            var btnLogin = document.getElementById('btn-submit-login');
+            btn.addEventListener('click', eventClickLogin);
         }
-
-        function eventClick(event) {
+        // Cadastro
+        function eventClickCadastro(event) {
             event.preventDefault();
             alert('Cadastrado com sucesso !');
+        }
+
+        // Login
+        function eventClickLogin(event) {
+            event.preventDefault();
+            alert('Logado com sucesso !');
         }
     </script>
 </body>
